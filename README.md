@@ -1,2 +1,2 @@
-# stardust.github.com
+#index
 我的博客
