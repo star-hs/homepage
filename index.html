@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+        <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <title>index</title>
+    </head>
+    <body onload="fun()" >
+        <hr id="c" style="height:300px; width:500px; background-color: rgb(0,24,12);"  >
+        <div class="container">
+            <h1 class="text-center">
+                <span class="text-danger">I</span>
+                <span class="text-success">N</span>
+                <span class="text-info">D</span>
+                <span class="text-primary">E</span>
+                <span class="text-warning">X</span>
+            </h1>
+            <h3 class="text-center text-dark">Always Love You</h3>
+        </div>
+        <footer class="jumbotron text-center" style="margin-top:10%;margin-bottom: 0%">
+            <p>copyright@hs</p>
+        </footer>
+        <script>
+        	var rad1,rad2,rad3;
+        	var r;
+            function change() {
+                    rad1 =parseInt(Math.random()*255) 
+                    rad2 =parseInt(Math.random()*255) 
+                    rad3 =parseInt(Math.random()*255) 
+                //var rad4 = Math.random();
+                //var rad5 = Math.random();
+                
+                r= document.getElementById("c").style.background=rgb(rad1,rad2,rad3)
+            }
+            function rgb(r,g,b)
+            {
+            	var num= 65535*r+256*g+b
+            	return  "#"+num.toString(16) 
+
+
+            }
+
+            function func()
+            {
+            	 setInterval('change()',100);
+            	//my=setInterval('alert(r)',1000)
+            }
+
+            func()
+            
+        </script>
+    </body>
+</html>
